@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #88b6fb, #62cdf5, #79dddd, #ace6c7, #deebc1);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#container{
+ width: 35vmax;
+ height: 45vmax;
+ border: 2px solid black;
+  margin-top: 0.7vmax;
+  border-radius: 5vmax;
+  flex-direction: column;
+  display: flex;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#task{
+  width: 30vmax;
+  height: 18vmax;
+  border-radius: 2vmax;
+  margin-top: -3.5vmax;
+  margin-left: 2.5vmax;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+.taskBar{
+  width: 26vmax;
+  height: 2vmax;
+  flex-direction: column;
+  margin: 10px;
+  border-radius: 20px;
+  border: none;
+  font-family: "Trirong", serif;
+}
+#submitButton{
+  width: 10vmax;
+  height: 2vmax;
+  text-decoration: none;
+  border: none;
+  background: black;
   color: white;
+  border-radius: 25px;
+  margin: 10px;
+  cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
+#textArea{
+  width: 26vmax;
+  height: 8vmax;
+  border: none;
+  border-radius: 10px;
+  font-family: "Trirong", serif;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#list{
+  width: 30vmax;
+  height: 5vmax;
+  border: 2px solid black;
+  display: flex;
+  margin-left: 20px;
+  border-radius:10px;
+  margin-top: 10px;
+}
+#list button{
+  width: 60px;
+  height: 30px;
+  margin-top: 20px;
+  margin-right: 20px;
+  border-radius: 25px;
+  background-color: green;
+  cursor: pointer;
+}
+#list div{
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 50vmax;
+  text-align: center;
+}
+#list p{
+  margin-top: 5px;
+}
+#box{
+  width: 33vmax;
+  height: 24vmax;
+  margin-left: 14px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: "Trirong", serif;
+}
+#heading{
+  margin-left: 200px;
+  font-family: "Trirong", serif;
 }
